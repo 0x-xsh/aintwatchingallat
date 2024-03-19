@@ -31,3 +31,83 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1em;
+  margin-bottom: 20px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.input-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  width: 90%;
+  max-width: 300px;
+}
+
+.response-container {
+  text-align: left;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 300px;
+}
+
+.response-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 0.9em;
+  max-width: 90%;
+}

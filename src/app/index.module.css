@@ -1,0 +1,12 @@
+/* src/pages/index.module.css */
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
