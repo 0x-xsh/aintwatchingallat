@@ -1,4 +1,4 @@
-To start summarizing YouTube videos with Ain'tWatching AllAt, follow these steps:
+To start summarizing YouTube videos with Ain'tWatchingAllat, follow these steps:
 
 Installation: Clone the frontend repository from GitHub.
 Development Server: Run the development server using one of the following commands:
