@@ -1,4 +1,4 @@
-# Ain'tWatchingAllat: Summarize YouTube Videos
+# Ain't Watching Allat: Summarize YouTube Videos
 
 To start summarizing YouTube videos with Ain'tWatchingAllat, follow these steps:
 
