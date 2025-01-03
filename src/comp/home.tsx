@@ -81,7 +81,7 @@ const Home: React.FC = () => {
       const videoId = inputValue.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/)?.[1] || null;
 
       try {
-        const staticData = await fetch(`http://localhost:8000/transcript?id=${videoId}`);
+        const staticData = await fetch(`https://aintwatching-server.onrender.com/transcript?id=${videoId}`);
         const jsonData = await staticData.json();
         const res = jsonData['resumed_captions'];
         setResponse(res);
