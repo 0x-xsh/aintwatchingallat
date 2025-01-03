@@ -3,31 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0; /* Text: black */
+  --background-start-rgb: 255, 255, 255; /* Background */
+  --background-end-rgb: 240, 240, 240; /* Subtle gradient end for contrast */
   
-  color-scheme: light; /* Force iOS to respect light mode */
-  
-  
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  color-scheme: light; /* Ensure iOS renders the page in light mode only */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgba(var(--background-start-rgb), 1),
+      rgba(var(--background-end-rgb), 1)
+    );
 }
 
 @layer utilities {
@@ -35,7 +24,6 @@ body {
     text-wrap: balance;
   }
 }
-
 
 .container {
   display: flex;
@@ -47,6 +35,7 @@ body {
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  color: rgb(50, 50, 50); /* Darker for accessibility */
 }
 
 .loading {
@@ -72,7 +61,7 @@ input {
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
   font-size: 1em;
   outline: none;
   margin-bottom: 10px;
@@ -82,7 +71,7 @@ input {
 button {
   padding: 15px;
   border-radius: 8px;
-  background-color: red;
+  background-color: #0077ff; /* Changed to blue for better contrast */
   color: white;
   border: none;
   font-size: 1em;
@@ -91,6 +80,10 @@ button {
   transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
   width: 90%;
   max-width: 300px;
+}
+
+button:hover {
+  background-color: #005bb5;
 }
 
 .response-container {
@@ -105,6 +98,7 @@ button {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .error {
